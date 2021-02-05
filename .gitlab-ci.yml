@@ -1,0 +1,5 @@
+image: ruby:latest
+
+FizzBuzz_Units:
+    script:
+        - ruby fizzbuzz-test.rb
