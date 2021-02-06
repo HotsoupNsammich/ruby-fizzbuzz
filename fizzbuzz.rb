@@ -1,4 +1,13 @@
 def fizzbuzz (num)
-    
-    return "1"
+    if num % 15 == 0
+        return "Fizzbuzz"
+    elsif num % 3 == 0
+        return "Fizz"
+    elsif num % 5 == 0
+        return "Buzz"
+    else
+        return num.to_s
+    end
 end
+
+puts fizzbuzz(15)
