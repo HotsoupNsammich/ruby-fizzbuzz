@@ -1,5 +1,15 @@
-image: ruby:latest
+stages:
+    - build
+    - test
 
-FizzBuzz_Units:
+buid:
+    stage: build
+    script:
+        - echo "Building"
+
+Unit Tests:
+    stage: test
+    image: ruby:latest
     script:
         - ruby fizzbuzz-test.rb
+
